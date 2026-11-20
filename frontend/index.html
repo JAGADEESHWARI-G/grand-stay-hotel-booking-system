@@ -1,0 +1,672 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Grand Stay | Hotel Booking</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+
+        <div class="container">
+
+            <a class="navbar-brand fw-bold" href="index.html">
+                GRAND STAY
+            </a>
+
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#home">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#about">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="rooms.html">Rooms</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#services">Services</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="my-bookings.html">My Bookings</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="admin-login.html">Admin</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contact">Contact</a>
+                    </li>
+
+                    <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+
+                        <button class="btn btn-warning"
+                            data-bs-toggle="modal"
+                            data-bs-target="#registerModal">
+
+                            Register
+
+                        </button>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <!-- HOME CAROUSEL -->
+    <section id="home">
+
+        <div id="hotelCarousel"
+            class="carousel slide"
+            data-bs-ride="carousel">
+
+            <div class="carousel-indicators">
+
+                <button type="button"
+                    data-bs-target="#hotelCarousel"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1">
+                </button>
+
+                <button type="button"
+                    data-bs-target="#hotelCarousel"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2">
+                </button>
+
+                <button type="button"
+                    data-bs-target="#hotelCarousel"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3">
+                </button>
+
+            </div>
+
+            <div class="carousel-inner">
+
+                <!-- SLIDE 1 -->
+                <div class="carousel-item active">
+
+                    <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1600&q=80"
+                        class="d-block w-100 hero-img"
+                        alt="Grand Stay luxury hotel">
+
+                    <div class="carousel-caption">
+
+                        <h1>Welcome to Grand Stay</h1>
+
+                        <p>Experience Luxury and Comfort</p>
+
+                        <a href="rooms.html" class="btn btn-warning">
+                            Explore Rooms
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- SLIDE 2 -->
+                <div class="carousel-item">
+
+                    <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1600&q=80"
+                        class="d-block w-100 hero-img"
+                        alt="Luxury hotel swimming pool">
+
+                    <div class="carousel-caption">
+
+                        <h1>Relax and Refresh</h1>
+
+                        <p>Your Perfect Holiday Destination</p>
+
+                        <a href="discover.html" class="btn btn-warning">
+                            Discover Our Facilities
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- SLIDE 3 -->
+                <div class="carousel-item">
+
+                    <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1600&q=80"
+                        class="d-block w-100 hero-img"
+                        alt="Grand Stay hotel exterior">
+
+                    <div class="carousel-caption">
+
+                        <h1>Luxury Beyond Expectations</h1>
+
+                        <p>Enjoy Your Stay With Us</p>
+
+                        <a href="discover.html" class="btn btn-warning">
+                            Discover Grand Stay
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PREVIOUS -->
+            <button class="carousel-control-prev"
+                type="button"
+                data-bs-target="#hotelCarousel"
+                data-bs-slide="prev">
+
+                <span class="carousel-control-prev-icon"></span>
+
+                <span class="visually-hidden">Previous</span>
+
+            </button>
+
+
+            <!-- NEXT -->
+            <button class="carousel-control-next"
+                type="button"
+                data-bs-target="#hotelCarousel"
+                data-bs-slide="next">
+
+                <span class="carousel-control-next-icon"></span>
+
+                <span class="visually-hidden">Next</span>
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+    <section id="about" class="container py-5">
+
+        <div class="text-center">
+
+            <h2>About Our Hotel</h2>
+
+            <p class="text-muted">
+                Grand Stay offers comfortable rooms, excellent services
+                and unforgettable hospitality.
+            </p>
+
+        </div>
+
+        <div class="row align-items-center mt-4">
+
+            <div class="col-md-6">
+
+                <img src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&w=1000&q=80"
+                    class="img-fluid rounded"
+                    alt="Hotel interior">
+
+            </div>
+
+            <div class="col-md-6">
+
+                <h3>Your Comfort Is Our Priority</h3>
+
+                <p>
+                    Enjoy a relaxing experience with modern facilities,
+                    beautiful rooms and friendly service.
+                </p>
+
+                <!-- UPDATED DISCOVER MORE BUTTON -->
+                <a href="discover.html" class="btn btn-dark">
+                    Discover More
+                    <i class="bi bi-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+<!-- ROOMS -->
+<section id="rooms" class="bg-light py-5">
+
+    <div class="container">
+
+        <!-- HEADING -->
+
+        <div class="text-center mb-4">
+
+            <h2>Our Rooms</h2>
+
+            <p>Discover comfort, elegance and luxury</p>
+
+        </div>
+
+        <!-- ROOM COLLAGE -->
+
+        <div class="room-collage">
+
+            <!-- SINGLE ROOM -->
+
+            <div class="collage-item single-room">
+
+                <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=1000&q=80"
+                     alt="Single Room">
+
+                <div class="room-overlay">
+                    <h4>Single Room</h4>
+                </div>
+
+            </div>
+
+            <!-- DOUBLE ROOM -->
+
+            <div class="collage-item double-room">
+
+                <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=800&q=80"
+                     alt="Double Room">
+
+                <div class="room-overlay">
+                    <h4>Double Room</h4>
+                </div>
+
+            </div>
+
+            <!-- DELUXE ROOM -->
+
+            <div class="collage-item deluxe-room">
+
+                <img src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&w=800&q=80"
+                     alt="Deluxe Room">
+
+                <div class="room-overlay">
+                    <h4>Deluxe Room</h4>
+                </div>
+
+            </div>
+
+            <!-- FAMILY ROOM -->
+
+            <div class="collage-item family-room">
+<img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=800&q=80" alt="Family Room">
+
+                <div class="room-overlay">
+                    <h4>Family Room</h4>
+                </div>
+
+            </div>
+
+            <!-- LUXURY ROOM -->
+
+            <div class="collage-item luxury-room">
+
+                <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=800&q=80"
+                     alt="Luxury Room">
+
+                <div class="room-overlay">
+                    <h4>Luxury Room</h4>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- VIEW ALL ROOMS -->
+
+        <div class="text-center mt-4">
+
+            <a href="rooms.html" class="btn btn-dark px-4 py-2">
+                View All Rooms <i class="bi bi-arrow-right ms-2"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+    <!-- SERVICES -->
+   <!-- OUR SERVICES -->
+<section id="services" class="py-5">
+    <div class="container">
+
+        <!-- SECTION HEADER -->
+        <div class="text-center mb-5">
+            <h2>Our Services</h2>
+            <p>Everything you need for a comfortable and memorable stay</p>
+        </div>
+
+        <!-- SERVICES GRID -->
+        <div class="services-grid">
+
+            <!-- ROOM SERVICE -->
+            <div class="service-card"
+                style="background-image: url('https://www.hotels.com/magazine/wp-content/uploads/2023/09/Room-Service-e1696343265103.jpg');">
+                <div class="service-overlay">
+                    <i class="bi bi-bell service-icon"></i>
+                    <h4>24/7 Room Service</h4>
+                    <p>Enjoy delicious food and personalized service anytime you need.</p>
+                </div>
+            </div>
+
+            <!-- FREE PARKING -->
+            <div class="service-card"
+                style="background-image: url('https://img.magnific.com/free-photo/car-park_1203-3451.jpg?semt=ais_hybrid&w=740&q=80');">
+                <div class="service-overlay">
+                    <i class="bi bi-car-front service-icon"></i>
+                    <h4>Free Parking</h4>
+                    <p>Enjoy safe, convenient and hassle-free parking during your stay.</p>
+                </div>
+            </div>
+
+            <!-- WIFI -->
+            <div class="service-card"
+                style="background-image: url('https://i0.wp.com/amberlair.com/wp-content/uploads/2016/02/amberlair-crowdsourced-crowdfunded-boutique-hotel-Blue-Karma-resort-wifi.jpg?ssl=1');">
+                <div class="service-overlay">
+                    <i class="bi bi-wifi service-icon"></i>
+                    <h4>Free Wi-Fi</h4>
+                    <p>Stay connected with complimentary high-speed internet.</p>
+                </div>
+            </div>
+
+            <!-- SPA -->
+            <div class="service-card"
+                style="background-image: url('https://oleanderfarms.com/wp-content/uploads/elementor/thumbs/DSC9347-scaled-1-qwb6bq87w6plicg1syb2a6k558hsr0kd5rt3lw32ew.jpeg');">
+                <div class="service-overlay">
+                    <i class="bi bi-flower1 service-icon"></i>
+                    <h4>Spa & Wellness</h4>
+                    <p>Relax, refresh and rejuvenate your body and mind.</p>
+                </div>
+            </div>
+
+            <!-- FITNESS CENTER -->
+            <div class="service-card"
+                style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPm5Mr7FZ7ca05HJhcoldR6gBSU6rswowPWpLPjNJQAc1G-WK1-muCF1fv&s=10');">
+                <div class="service-overlay">
+                    <i class="bi bi-heart-pulse service-icon"></i>
+                    <h4>Fitness Center</h4>
+                    <p>Keep your fitness routine going with our modern gym facilities.</p>
+                </div>
+            </div>
+
+            <!-- EVENT HALL -->
+            <div class="service-card"
+                style="background-image: url('https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=900&q=80');">
+                <div class="service-overlay">
+                    <i class="bi bi-stars service-icon"></i>
+                    <h4>Events & Celebrations</h4>
+                    <p>Make your special moments unforgettable with elegant celebrations.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+    <!-- FAQ -->
+    <section class="bg-light py-5">
+
+        <div class="container">
+
+            <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+
+            <div class="accordion" id="faqAccordion">
+
+                <div class="accordion-item">
+
+                    <h2 class="accordion-header">
+
+                        <button class="accordion-button"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#faq1">
+
+                            How can I book a room?
+
+                        </button>
+
+                    </h2>
+
+                    <div id="faq1"
+                        class="accordion-collapse collapse show"
+                        data-bs-parent="#faqAccordion">
+
+                        <div class="accordion-body">
+                            Visit our rooms section, select a room
+                            and complete the booking form.
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="accordion-item">
+
+                    <h2 class="accordion-header">
+
+                        <button class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#faq2">
+
+                            Can I cancel my booking?
+
+                        </button>
+
+                    </h2>
+
+                    <div id="faq2"
+                        class="accordion-collapse collapse"
+                        data-bs-parent="#faqAccordion">
+
+                        <div class="accordion-body">
+                            Yes, you can cancel your booking
+                            through the My Bookings section.
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="accordion-item">
+
+                    <h2 class="accordion-header">
+
+                        <button class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#faq3">
+
+                            What payment methods are accepted?
+
+                        </button>
+
+                    </h2>
+
+                    <div id="faq3"
+                        class="accordion-collapse collapse"
+                        data-bs-parent="#faqAccordion">
+
+                        <div class="accordion-body">
+                            Payment options will be provided
+                            during the booking process.
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+    <section id="contact" class="container py-5 text-center">
+
+        <h2>Contact Us</h2>
+
+        <p>Email: grandstay@gmail.com</p>
+        <p>Phone: +91 9884630711</p>
+        <p>Location: Chennai, Tamil Nadu</p>
+
+    </section>
+
+
+    <!-- REGISTRATION MODAL -->
+    <div class="modal fade" id="registerModal" tabindex="-1">
+
+        <div class="modal-dialog modal-dialog-centered">
+
+            <div class="modal-content">
+
+                <div class="modal-header">
+
+                    <h5 class="modal-title">Customer Registration</h5>
+
+                    <button type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal">
+                    </button>
+
+                </div>
+
+                <div class="modal-body">
+
+                    <form id="registerForm">
+
+                        <input type="text"
+                            class="form-control mb-3"
+                            name="name"
+                            placeholder="Full Name"
+                            required>
+
+                        <input type="email"
+                            class="form-control mb-3"
+                            name="gmail"
+                            placeholder="Gmail"
+                            required>
+
+                        <input type="tel"
+                            class="form-control mb-3"
+                            name="phone"
+                            placeholder="Phone Number"
+                            pattern="[0-9]{10}"
+                            maxlength="10"
+                            required>
+
+                        <textarea class="form-control mb-3"
+                            name="address"
+                            placeholder="Address"
+                            required></textarea>
+
+                        <input type="text"
+                            class="form-control mb-3"
+                            name="city"
+                            placeholder="City"
+                            required>
+
+                        <input type="text"
+                            class="form-control mb-3"
+                            name="state"
+                            placeholder="State"
+                            required>
+
+                        <input type="text"
+                            class="form-control mb-3"
+                            name="pincode"
+                            placeholder="Pincode"
+                            pattern="[0-9]{6}"
+                            maxlength="6"
+                            required>
+
+                        <button type="submit" class="btn btn-dark w-100">
+                            Register
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ALERT -->
+    <div class="container mt-3">
+        <div id="alertMessage"></div>
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white text-center p-4">
+
+        <p class="mb-0">
+            © 2026 Grand Stay Hotel. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- BOOTSTRAP JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- CUSTOM JS -->
+    <script src="js/home.js"></script>
+
+</body>
+
+</html>

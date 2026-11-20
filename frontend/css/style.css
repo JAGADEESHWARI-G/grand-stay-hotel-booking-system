@@ -1,0 +1,265 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding-top: 56px;
+}
+
+.navbar-brand {
+    letter-spacing: 2px;
+}
+
+.hero-img {
+    height: 600px;
+    object-fit: cover;
+    filter: brightness(65%);
+}
+
+.carousel-caption {
+    bottom: 180px;
+}
+
+.carousel-caption h1 {
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.service-card {
+    border: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+}
+
+footer {
+    margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+
+    .hero-img {
+        height: 350px;
+    }
+
+    .carousel-caption {
+        bottom: 50px;
+    }
+
+    .carousel-caption h1 {
+        font-size: 25px;
+    }
+
+}
+
+/* OUR ROOMS COLLAGE */
+
+.room-collage {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 230px 230px;
+    gap: 15px;
+}
+
+.collage-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 14px;
+}
+
+.collage-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.collage-item:hover img {
+    transform: scale(1.06);
+}
+
+.room-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: flex-end;
+    padding: 18px;
+    color: white;
+    background: linear-gradient(
+        transparent 40%,
+        rgba(0, 0, 0, 0.75)
+    );
+}
+
+.room-overlay h4 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+}
+
+/* COLLAGE GRID */
+
+.single-room {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+}
+
+.double-room {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.deluxe-room {
+    grid-column: 4;
+    grid-row: 1;
+}
+
+.family-room {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.luxury-room {
+    grid-column: 4;
+    grid-row: 2;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    .room-collage {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 220px 170px 170px;
+        gap: 10px;
+    }
+
+    .single-room {
+        grid-column: 1 / 3;
+        grid-row: 1;
+    }
+
+    .double-room {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .deluxe-room {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .family-room {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    .luxury-room {
+        grid-column: 2;
+        grid-row: 3;
+    }
+
+    .room-overlay {
+        padding: 12px;
+    }
+
+    .room-overlay h4 {
+        font-size: 15px;
+    }
+}
+/* ==========================
+   PREMIUM SERVICES SECTION
+========================== */
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.service-card {
+    position: relative;
+    height: 320px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 18px;
+    overflow: hidden;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    cursor: pointer;
+}
+
+/* HOVER EFFECT */
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* DARK GRADIENT */
+.service-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 25px;
+    color: white;
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.85),
+        rgba(0, 0, 0, 0.15)
+    );
+    transition: background 0.4s ease;
+}
+
+.service-card:hover .service-overlay {
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.92),
+        rgba(0, 0, 0, 0.25)
+    );
+}
+
+/* ICON */
+.service-icon {
+    font-size: 32px;
+    margin-bottom: 12px;
+    color: #ffffff;
+}
+
+/* TITLE */
+.service-overlay h4 {
+    font-size: 21px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+/* DESCRIPTION */
+.service-overlay p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* RESPONSIVE - TABLET */
+@media (max-width: 992px) {
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* RESPONSIVE - MOBILE */
+@media (max-width: 576px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service-card {
+        height: 280px;
+    }
+}
